@@ -266,14 +266,6 @@
                     <div class="mobile-hide row product information">
                         <div class="column">
                             <h1 itemprop="name" class="nomeProduto" id="produto-nome">@Model.Name</h1>
-                            @if (@Model.Brand != null)
-                            {
-                                <h5 itemprop="productBrand" class="marcaProduto">@Model.Brand.Name</h5>
-                            }
-                            else
-                            {
-                                <h5 itemprop="productBrand" class="marcaProduto"></h5>
-                            }
                             <div class="ui two column grid stackable">
                                 <div class="column">
                                     <h6 itemprop="productID" class="codProduto">@Model.Code</h6>
@@ -299,6 +291,18 @@
                                     </div>
                                 </div>
                             </div>
+
+
+                            @if (@Model.Brand != null)
+                            {
+                                <h5 itemprop="productBrand" class="marcaProduto">@Model.Brand.Name</h5>
+                            }
+                            else
+                            {
+                                <h5 itemprop="productBrand" class="marcaProduto"></h5>
+                            }
+
+                            
                         </div>
                     </div>
                     <!--COMEÇO DICA DE COMPRA-->

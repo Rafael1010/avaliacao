@@ -250,14 +250,6 @@
             <!-- COMEÇO MARCA MOBILE-->
             <div class="mobile only column">
                 <h1 itemprop="name" class="nomeProduto" id="produto-nome">@Model.Name</h1>
-                @if (Model.Brand != null)
-                {
-                    <h5 itemprop="productBrand" class="marcaProduto">@Model.Brand.Name</h5>
-                }
-                else
-                {
-                    <h5 itemprop="productBrand" class="marcaProduto"></h5>
-                }
                 <!-- FIM MARCA MOBILE-->
                 <div class="ui two column grid">
                     <div class="column six wide mobile">
@@ -283,6 +275,14 @@
                             }
                         </div>
                     </div>
+                    @if (Model.Brand != null)
+                {
+                    <h5 itemprop="productBrand" class="marcaProduto">@Model.Brand.Name</h5>
+                }
+                else
+                {
+                    <h5 itemprop="productBrand" class="marcaProduto"></h5>
+                }
                 </div>
             </div>
         </div>
@@ -301,14 +301,6 @@
                     <div class="mobile-hide row product information">
                         <div class="column">
                             <h1 itemprop="name" class="nomeProduto" id="produto-nome">@Model.Name</h1>
-                            @if (@Model.Brand != null)
-                            {
-                                <h5 itemprop="productBrand" class="marcaProduto">@Model.Brand.Name</h5>
-                            }
-                            else
-                            {
-                                <h5 itemprop="productBrand" class="marcaProduto"></h5>
-                            }
                             <div class="ui two column grid stackable">
                                 <div class="column">
                                     <h6 itemprop="productID" class="codProduto">@Model.Code</h6>
@@ -333,6 +325,14 @@
                                         }
                                     </div>
                                 </div>
+                            @if (@Model.Brand != null)
+                            {
+                                <h5 itemprop="productBrand" class="marcaProduto">@Model.Brand.Name</h5>
+                            }
+                            else
+                            {
+                                <h5 itemprop="productBrand" class="marcaProduto"></h5>
+                            }
                             </div>
                         </div>
                     </div>
